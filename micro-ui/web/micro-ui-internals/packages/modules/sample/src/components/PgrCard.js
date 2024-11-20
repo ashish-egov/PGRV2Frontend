@@ -19,7 +19,7 @@ const PgrCard = () => {
   let propsForCSR = [
     {
       label: t("ES_PGR_NEW_COMPLAINT"),
-      link: `/${window?.contextPath}/employee/pgr/complaint/create`,
+      link: `/${window?.contextPath}/employee/sample/create`,
       role: "CSR"
     }
   ]
@@ -33,17 +33,17 @@ const PgrCard = () => {
     kpis: [
       {
         label: t("TOTAL_PGR"),
-        link: `/${window?.contextPath}/employee/pgr/inbox`
+        link: `/${window?.contextPath}/employee/sample/inbox`
       },
       {
         label: t("TOTAL_NEARING_SLA"),
-        link: `/${window?.contextPath}/employee/pgr/inbox`
+        link: `/${window?.contextPath}/employee/sample/inbox`
       }
     ],
     links: [
       {
         label: t("ES_PGR_INBOX"),
-        link: `/${window?.contextPath}/employee/pgr/inbox`
+        link: `/${window?.contextPath}/employee/sample/inbox`
       },
       ...propsForCSR
     ]

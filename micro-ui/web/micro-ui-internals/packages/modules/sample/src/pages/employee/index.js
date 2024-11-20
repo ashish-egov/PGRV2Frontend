@@ -3,6 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Switch } from "react-router-dom";
 import Inbox from "./Inbox";
+import CreateComplaint from "./CreateComplaint";
 
 const ProjectBreadCrumb = ({ location }) => {
   const { t } = useTranslation();
@@ -30,6 +31,7 @@ const App = ({ path, stateCode, userType, tenants }) => {
           <ProjectBreadCrumb location={location} />
         </React.Fragment>
         <PrivateRoute path={`${path}/inbox`} component={() => <Inbox />} />
+        <PrivateRoute path={`${path}/create`} component={() => <CreateComplaint />} />
       </AppContainer>
     </Switch>
   );
