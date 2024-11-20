@@ -2,7 +2,7 @@ import { Loader } from "@egovernments/digit-ui-react-components";
 import React from "react";
 import { useRouteMatch } from "react-router-dom";
 import { default as EmployeeApp } from "./pages/employee";
-import SampleCard from "./components/SampleCard";
+import PgrCard from "./components/PgrCard";
 import ViewEstimateComponent from "./components/ViewEstimateComponent";
 import { overrideHooks, updateCustomConfigs } from "./utils";
 import AdditionalComponentWrapper from "./components/AdditionalComponent";
@@ -27,7 +27,7 @@ export const SampleModule = ({ stateCode, userType, tenants }) => {
 
 const componentsToRegister = {
   SampleModule,
-  SampleCard,
+  SampleCard: PgrCard,
   ViewEstimatePage: ViewEstimateComponent,
   SampleAdditionalComponent: AdditionalComponentWrapper,
   SampleMultiComponent: SampleMultiComponent,
